@@ -6,10 +6,10 @@ const regExp = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
 
 gmailButton.onclick = () => {
     if (regExp.test(gmailInput.value)) {
-        gmailResult.innerHTML = 'OKAY'
+        gmailResult.innerHTML = 'GOOD'
         gmailResult.style.color = 'green'
     } else {
-        gmailResult.innerHTML = 'NOT OKAY'
+        gmailResult.innerHTML = 'NOT GOOD'
         gmailResult.style.color = 'red'
     }
 }
@@ -17,13 +17,12 @@ gmailButton.onclick = () => {
 const childBlock = document.querySelector('.child_block')
 
 let positionX = 0
-let positionY = 0
 
 const move = () => {
-    if (positionX < 448) {
+    if (positionX < 449) {
         positionX++
         childBlock.style.left = `${positionX}px`
-        setTimeout(move, 1)
+        setTimeout(move, 5)
     }
 }
 

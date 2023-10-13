@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="13d25aa4-0a70-4de8-8922-742db11b1d23" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/home_works.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/home_works.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home_works.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_works.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +18,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2WZ5HpZuPLhSv7KYr7HNY7Z5NDM" />
   <component name="ProjectViewState">
@@ -45,6 +47,10 @@
       <workItem from="1696930805262" duration="309000" />
       <workItem from="1697017386878" duration="4324000" />
       <workItem from="1697084918181" duration="931000" />
+      <workItem from="1697085920913" duration="491000" />
+      <workItem from="1697086583298" duration="2043000" />
+      <workItem from="1697178901882" duration="654000" />
+      <workItem from="1697179588350" duration="2241000" />
     </task>
     <servers />
   </component>

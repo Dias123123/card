@@ -17,13 +17,29 @@ gmailButton.onclick = () => {
 const childBlock = document.querySelector('.child_block')
 
 let positionX = 0
+let positionY = 0
 
 const move = () => {
-    if (positionX < 449) {
+    if (positionX < 449 && positionY === 0) {
         positionX++
         childBlock.style.left = `${positionX}px`
+        setTimeout(move, 5)
+    } else if (positionX >= 449 && positionY < 449) {
+        positionY++
+        childBlock.style.top = `${positionY}px`
+        setTimeout(move, 5)
+    } else if (positionX > 0 && positionY > 0) {
+        positionX--
+        childBlock.style.left = `${positionX}px`
+        setTimeout(move, 5)
+    } else if (positionX === 0 && positionY > 0) {
+        positionY--
+        childBlock.style.top = `${positionY}px`
         setTimeout(move, 5)
     }
 }
 
 move ()
+
+
+

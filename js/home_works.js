@@ -41,5 +41,28 @@ const move = () => {
 
 move ()
 
+const startBtn = document.getElementById('start')
+const stopBtn = document.getElementById('stop')
+const resetBtn = document.getElementById('reset')
+const intervalBtn = document.querySelector('.interval')
 
+let second = 0;
+let interval;
 
+const startTimer = () => {
+    second++;
+    intervalBtn.innerHTML = second;
+}
+
+startBtn.addEventListener('click', () => {
+    interval = setInterval(startTimer, 1000)
+})
+
+stopBtn.addEventListener('click', () => {
+    clearInterval(interval)
+})
+
+resetBtn.addEventListener('click', () => {
+    clearInterval(interval);
+    second = 0;
+})

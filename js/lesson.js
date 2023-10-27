@@ -38,3 +38,47 @@ tabsParent.onclick = (event) => {
         })
     }
 }
+
+
+
+const  card = document.querySelector('.card')
+const  btnPrev = document.querySelector('#btn-prev')
+const  btnNext = document.querySelector('#btn-next')
+let count = 1
+
+const fetchCard = (id) => {
+    fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+        .then(response => response.json())
+        .then(data => {
+            card.innerHTML = `
+                <p>${data.title}</p>
+                <p style="color: ${data.completed ? 'green' : 'red'}">${data.completed}</p>
+                <span>${data.id}</span>
+            `
+        })
+}
+
+btnNext.onclick = () => {
+    count++
+    if (count > 200) {
+        count = 0
+    } else {
+        fetchCard(count)
+    }
+}
+
+btnPrev.onclick = () => {
+    count--
+    if (count < 1) {
+        count = 201
+    } else {
+        fetchCard(count)
+    }
+}
+
+fetchCard(count)
+
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then((response) => { return response.json(); }) .then((data) => { console.log(data); });
+
